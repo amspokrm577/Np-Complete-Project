@@ -36,7 +36,8 @@ def createAdjList():
 def bruteforce(graph, n):
     maxclique = []
     nodes = list(graph.keys())
-    for i in itertools.islice(range(n + 1), n + 1):
+    
+    for i in itertools.islice(range(len(nodes) + 1), len(nodes) + 1):
         k = i
         cliqueResult = getClique(k, nodes, graph)
         if isinstance(cliqueResult, tuple):
@@ -53,7 +54,7 @@ def getClique(k, nodes, graph):
     for combo in itertools.combinations(nodes, k):
         valid = validateCombo(combo, graph)
         if valid == True:
-            return valid, combo
+            return (valid, combo)
     return valid
 
 
