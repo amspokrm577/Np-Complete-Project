@@ -1,5 +1,9 @@
 import unittest
-from maxclique import main as maxclique_
+import sys
+sys.path.append("..")
+import exactsolution 
+from exactsolution import main as maxclique_
+
 from unittest.mock import patch
 from io import StringIO
 
