@@ -2,10 +2,7 @@
 Max Clique Exact Solution (Bruteforce method)
 By: Justin Park
 """
-
-
 import itertools
-
 
 def main():
     graph, n = createAdjList()
@@ -18,7 +15,6 @@ def main():
             output = ' '.join([str(vertex) for vertex in clique])
             print(output)
 
-            
 def createAdjList():
     adj = {}
     n = int(input())
@@ -40,8 +36,8 @@ def createAdjList():
 def bruteforce(graph, n):
     maxclique = []
     nodes = list(graph.keys())
-    
-    for i in itertools.islice(range(len(nodes) + 1), len(nodes) + 1):
+    #len(nodes) + 1 to include the last node.
+    for i in range(len(nodes) + 1):
         k = i
         cliqueResult = getClique(k, nodes, graph)
         if isinstance(cliqueResult, tuple):
@@ -49,9 +45,8 @@ def bruteforce(graph, n):
             continue
         if cliqueResult == False:
             return maxclique
-        #keep incrementing as long check combo returns true. If it returns false, the previous on eis the answer
+        #keep incrementing as long check combo returns true. If it returns false, the previous one is the answer
     return maxclique
-
 
 #check the current combination
 def getClique(k, nodes, graph):
@@ -73,7 +68,6 @@ def validateCombo(combo, graph):
         if checkNeighbors(combo, vertex, graph) == False:
             return False
 
-        
 #iterate through our combination. checks to see if our current num in combo is in the neighbors list for our current vertex
 def checkNeighbors(combo, vertex, graph):
     valid = True
