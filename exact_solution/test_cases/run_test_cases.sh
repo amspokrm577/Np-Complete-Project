@@ -102,3 +102,24 @@ then
 else
     echo "Test did not Pass"
 fi
+
+#Test 8
+#34 vertices, 89 edges
+#RT: 1802.45 sec (Over 20 minutes)
+echo "----------------"
+echo "TEST 8: "
+expectedoutput="4 6 9 11 8 5 3 7 1 2 10"
+echo -e $divider
+echo "Expected output: "
+echo $expectedoutput
+echo -e $divider
+echo "Actual Output: "
+test8= /usr/bin/time -f "\nRun time: %e sec" python maxclique.py < input8.txt
+echo $test8
+if [ "$test8" == "$expected" ]
+then
+    echo "Test Passed"
+else
+    echo "Test did not Pass"
+fi
+
