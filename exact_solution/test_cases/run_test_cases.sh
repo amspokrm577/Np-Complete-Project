@@ -14,7 +14,7 @@ echo "Expected Output:"
 echo $expectedoutput
 echo -e $divider
 echo "Actual Output: $test1"
-test1= /usr/bin/time -f "\nRun time: %e sec" python maxclique.py < input1.txt
+test1= /usr/bin/time -f "\nRun time: %e sec" python ../maxclique.py < input1.txt
 echo $test1
 if [ "$test1" == "$expected" ]
 then
@@ -34,7 +34,7 @@ echo "Expected output: "
 echo $expectedoutput
 echo -e $divider
 echo "Actual Output: $test1"
-test2= /usr/bin/time -f "\nRun time: %e sec" python maxclique.py < input2.txt
+test2= /usr/bin/time -f "\nRun time: %e sec" python ../maxclique.py < input2.txt
 echo $test2
 if [ "$test2" == "$expected" ]
 then
@@ -54,7 +54,7 @@ echo "Expected output: "
 echo $expectedoutput
 echo -e $divider
 echo "Actual Output: "
-test3= /usr/bin/time -f "\nRun time: %e sec" python maxclique.py < input3.txt
+test3= /usr/bin/time -f "\nRun time: %e sec" python ../maxclique.py < input3.txt
 echo $test3
 if [ "$test3" == "$expected" ]
 then
@@ -74,7 +74,7 @@ echo "Expected output: "
 echo $expectedoutput
 echo -e $divider
 echo "Actual Output: "
-test4= /usr/bin/time -f "\nRun time: %e sec" python maxclique.py < input4.txt
+test4= /usr/bin/time -f "\nRun time: %e sec" python ../maxclique.py < input4.txt
 echo $test4
 if [ "$test4" == "$expected" ]
 then
@@ -94,7 +94,7 @@ echo "Expected output: "
 echo $expectedoutput
 echo -e $divider
 echo "Actual Output: "
-test5= /usr/bin/time -f "\nRun time: %e sec" python maxclique.py < input5.txt
+test5= /usr/bin/time -f "\nRun time: %e sec" python ../maxclique.py < input5.txt
 echo $test5
 if [ "$test5" == "$expected" ]
 then
@@ -114,7 +114,7 @@ echo "Expected output: "
 echo $expectedoutput
 echo -e $divider
 echo "Actual Output: "
-test6= /usr/bin/time -f "\nRun time: %e sec" python maxclique.py < input6.txt
+test6= /usr/bin/time -f "\nRun time: %e sec" python ../maxclique.py < input6.txt
 echo $test6
 if [ "$test6" == "$expected" ]
 then
@@ -134,7 +134,7 @@ echo "Expected output: "
 echo $expectedoutput
 echo -e $divider
 echo "Actual Output: "
-test7= /usr/bin/time -f "\nRun time: %e sec" python maxclique.py < input7.txt
+test7= /usr/bin/time -f "\nRun time: %e sec" python ../maxclique.py < input7.txt
 echo $test7
 if [ "$test7" == "$expected" ]
 then
@@ -154,7 +154,7 @@ echo "Expected output: "
 echo $expectedoutput
 echo -e $divider
 echo "Actual Output: "
-test8= /usr/bin/time -f "\nRun time: %e sec" python maxclique.py < input8.txt
+test8= /usr/bin/time -f "\nRun time: %e sec" python ../maxclique.py < input8.txt
 echo $test8
 if [ "$test8" == "$expected" ]
 then
@@ -174,7 +174,7 @@ echo "Expected output: "
 echo $expectedoutput
 echo -e $divider
 echo "Actual Output: "
-test9= /usr/bin/time -f "\nRun time: %e sec" python maxclique.py < input9.txt
+test9= /usr/bin/time -f "\nRun time: %e sec" python ../maxclique.py < input9.txt
 echo $test9
 if [ "$test9" == "$expected" ]
 then

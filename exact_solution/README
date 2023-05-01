@@ -1,1 +1,29 @@
+Running all Tests:
+
+You can use this command to set the .sh file to an executable: chmod +x run_test_cases.sh
+The expected output, actual output, and the comparison to see if it passed the test or not
+is meant to output onto the command line. 
+
+Each individual test has a description of number of vertices and edges in the .sh file
+
+You can redirect it to output.txt by running:  ./run_test_cases.sh > output.txt
+However, the run times will output on the command line and not the output.txt
+
+You can run it with this command to have the output on the command line which will
+also output the corresponding run time for each test case: ./run_test_cases.sh
+
+
+
+Running individual Tests:
+
+You can use this command to set the .sh file to an executable: chmod +x run_sample.sh
+
+For your convenience, just change the name of the input file that is being read in 
+to test the test you want.
+
+You can redirect it to output.txt by running:  run_sample.sh > output.txt
+Or you can run it so the output will be on command line with: run_sample.sh
+
+The output shows the actual output of running the tests and runtime.
+
 
