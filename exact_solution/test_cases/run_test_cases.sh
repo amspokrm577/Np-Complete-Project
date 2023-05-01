@@ -64,7 +64,7 @@ else
 fi
 
 #Test 4
-#73 vertices, 99 edges
+#67 vertices, 99 edges
 #RT: 173.37 sec
 echo "----------------"
 echo "TEST 4: "
@@ -124,11 +124,11 @@ else
 fi
 
 #Test 7
-#34 vertices, 89 edges
-#RT: 1802.45 sec (Over 20 minutes)
+#22 vertices, 49 edges
+#RT: 0.17 sec
 echo "----------------"
 echo "TEST 7: "
-expectedoutput="4 6 9 11 8 5 3 7 1 2 10"
+expectedoutput="0 1 2 3 4"
 echo -e $divider
 echo "Expected output: "
 echo $expectedoutput
@@ -137,6 +137,46 @@ echo "Actual Output: "
 test7= /usr/bin/time -f "\nRun time: %e sec" python maxclique.py < input7.txt
 echo $test7
 if [ "$test7" == "$expected" ]
+then
+    echo "Test Passed"
+else
+    echo "Test did not Pass"
+fi
+
+#Test 8
+# 55 vertices, 120 edges
+#RT: 55.85 sec
+echo "----------------"
+echo "TEST 8: "
+expectedoutput="0 1 2 3 4"
+echo -e $divider
+echo "Expected output: "
+echo $expectedoutput
+echo -e $divider
+echo "Actual Output: "
+test8= /usr/bin/time -f "\nRun time: %e sec" python maxclique.py < input8.txt
+echo $test8
+if [ "$test8" == "$expected" ]
+then
+    echo "Test Passed"
+else
+    echo "Test did not Pass"
+fi
+
+#Test 9
+#34 vertices, 89 edges
+#RT: 1802.45 sec (Over 20 minutes)
+echo "----------------"
+echo "TEST 9: "
+expectedoutput="4 6 9 11 8 5 3 7 1 2 10"
+echo -e $divider
+echo "Expected output: "
+echo $expectedoutput
+echo -e $divider
+echo "Actual Output: "
+test9= /usr/bin/time -f "\nRun time: %e sec" python maxclique.py < input9.txt
+echo $test9
+if [ "$test9" == "$expected" ]
 then
     echo "Test Passed"
 else
