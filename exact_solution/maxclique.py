@@ -19,7 +19,7 @@ def createAdjList():
     adj = {}
     n = int(input())
     if n > 0:
-        for _ in itertools.islice(range(n), n):
+        for _ in range(n):
             s1, s2 = input().split()
             s1 = int(s1)
             s2 = int(s2)
