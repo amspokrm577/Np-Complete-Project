@@ -5,6 +5,10 @@ Author: Ross Amspoker
 
 Problem type: Greedy
 
+source: 
+https://courses.engr.illinois.edu/cs598csc/sp2011/lectures/lecture_7.pdf
+
+
 """
 
 
